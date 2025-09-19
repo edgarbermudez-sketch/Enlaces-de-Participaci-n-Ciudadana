@@ -8,11 +8,8 @@ Este repositorio contiene una lista de recursos y enlaces útiles relacionados c
 
 ## Enlaces
 
-- [Introducción](docs/introduccion.md)
-- [Instalación](docs/instalacion.md)
-- [Ejemplos](ejemplos/README.md)
-- [GitHub Docs](https://docs.github.com)
-- [Markdown Guide](https://www.markdownguide.org)
+- [Charlas Ciudadanas](https://docs.google.com/spreadsheets/d/1Xilnqb4jymMcy9n7cQfWbOgGbRSI3SWj/edit?usp=drive_link&ouid=109790356400439067107&rtpof=true&sd=true )
+
 
 ---
 
