@@ -18,21 +18,21 @@
     }
 
     header {
-      background-color: #2c3e50;
+      background: linear-gradient(135deg, #2c3e50, #3498db);
       color: #fff;
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.2em;
     }
 
     header p {
       margin-top: 10px;
       font-size: 1.1em;
-      color: #bdc3c7;
+      color: #ecf0f1;
     }
 
     .container {
@@ -45,12 +45,13 @@
 
     .card {
       background-color: #fff;
-      width: 250px;
-      padding: 20px;
+      width: 260px;
+      padding: 25px 20px;
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       transition: transform 0.3s, box-shadow 0.3s;
       text-align: center;
+      color: #fff;
     }
 
     .card:hover {
@@ -61,22 +62,31 @@
     .card a {
       display: block;
       text-decoration: none;
-      color: #2c3e50;
+      color: inherit;
       font-weight: 700;
       margin-top: 15px;
       font-size: 1.1em;
-      transition: color 0.3s;
+      transition: opacity 0.3s;
     }
 
     .card a:hover {
-      color: #e67e22;
+      opacity: 0.8;
     }
+
+    /* Colores para cada tarjeta */
+    .charlas { background: #1abc9c; }
+    .agenda { background: #3498db; }
+    .drive { background: #9b59b6; }
+    .calendario { background: #e67e22; }
+    .oficios { background: #e74c3c; }
+    .bitacora { background: #2ecc71; }
 
     footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
       color: #777;
+      background-color: #ecf0f1;
     }
   </style>
 </head>
@@ -88,19 +98,46 @@
   </header>
 
   <div class="container">
-    <div class="card">
+    <div class="card charlas">
       <div>🗣️</div>
-      <a href="https://docs.google.com/spreadsheets/d/1Xilnqb4jymMcy9n7cQfWbOgGbRSI3SWj/edit?usp=drive_link">Charlas Ciudadanas</a>
+      <a href="https://docs.google.com/spreadsheets/d/1Xilnqb4jymMcy9n7cQfWbOgGbRSI3SWj/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        Charlas Ciudadanas
+      </a>
     </div>
 
-    <div class="card">
+    <div class="card agenda">
       <div>📅</div>
-      <a href="https://docs.google.com/spreadsheets/d/1m9SYYWFKmIOMYNPLrkVDv59rTBDyCgTx/edit?pli=1&gid=2038687988#gid=2038687988">Agenda DEECyPC</a>
+      <a href="https://docs.google.com/spreadsheets/d/1AbKjaLVGfy-0Fl2efEtDdH7-bEkvt43n5s3TVm-ftgY/edit?gid=2061439096" target="_blank" rel="noopener noreferrer">
+        Agenda DEECyPC
+      </a>
     </div>
 
-    <div class="card">
+    <div class="card drive">
       <div>📁</div>
-      <a href="https://drive.google.com/drive/folders/1aiMqzN1EV5UAWi9Ss2jxhCnY9tcrWUrI">Drive de la CPC</a>
+      <a href="https://drive.google.com/drive/folders/1aiMqzN1EV5UAWi9Ss2jxhCnY9tcrWUrI" target="_blank" rel="noopener noreferrer">
+        Drive de la CPC
+      </a>
+    </div>
+
+    <div class="card calendario">
+      <div>🗓️</div>
+      <a href="https://docs.google.com/document/d/1bnE4nGrIUsuQjra13fSZ24nj_SNWa2tP/edit" target="_blank" rel="noopener noreferrer">
+        Calendario de Charlas Ciudadanas
+      </a>
+    </div>
+
+    <div class="card oficios">
+      <div>📑</div>
+      <a href="https://onedrive.live.com/view.aspx?resid=5A167C72C37BC1DA!103&ithint=file%2cxlsx&authkey=!AO0phwAamE5jYi8" target="_blank" rel="noopener noreferrer">
+        Control de Oficios DEECyPC
+      </a>
+    </div>
+
+    <div class="card bitacora">
+      <div>📝</div>
+      <a href="https://onedrive.live.com/edit?id=E2404BBBD1410DF2!152578&resid=E2404BBBD1410DF2!152578&ithint=file%2Cxlsx&authkey=!ADW1GKsSOfoiEI8&wdo=2&cid=e2404bbbd1410df2" target="_blank" rel="noopener noreferrer">
+        Bitácora 2025
+      </a>
     </div>
   </div>
 
