@@ -4,150 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enlaces de Participación Ciudadana</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f0f4f8;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+      background: #f5f7fa;
+      color: #333;
+      text-align: center;
     }
 
     header {
-      background: linear-gradient(135deg, #2c3e50, #3498db);
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
+      background: #004080;
+      color: white;
+      padding: 20px;
     }
 
     header img {
       max-width: 250px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      filter: drop-shadow(0 0 12px rgba(0,0,0,0.25)); /* Difuminado suave */
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.2em;
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 28px;
     }
 
-    header p {
-      margin-top: 10px;
-      font-size: 1.1em;
-      color: #ecf0f1;
+    main {
+      padding: 30px;
     }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 40px 20px;
-      gap: 20px;
-    }
-
-    .card {
-      background-color: #fff;
-      width: 260px;
-      padding: 25px 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-      text-align: center;
-      color: #fff;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
-    .card a {
-      display: block;
+    a {
+      display: inline-block;
+      margin: 15px;
+      padding: 12px 24px;
+      background: #004080;
+      color: white;
       text-decoration: none;
-      color: inherit;
-      font-weight: 700;
-      margin-top: 15px;
-      font-size: 1.1em;
-      transition: opacity 0.3s;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.2s ease;
+      font-size: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
-    .card a:hover {
-      opacity: 0.8;
+    a:hover {
+      background: #0059b3;
+      transform: translateY(-3px);
     }
-
-    /* Colores para cada tarjeta */
-    .directorio { background: #1abc9c; }
-    .calendario { background: #e67e22; }
-    .agenda { background: #3498db; }
-    .drive { background: #9b59b6; }
-    .oficios { background: #e74c3c; }
-    .bitacora { background: #2ecc71; }
 
     footer {
-      text-align: center;
+      margin-top: 40px;
       padding: 20px;
-      font-size: 0.9em;
-      color: #777;
-      background-color: #ecf0f1;
+      background: #ddd;
+      color: #333;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="Logo%2030%20años.jpg" alt="Logo IEM 30 años">
-    <h1>📚 Enlaces de Participación Ciudadana</h1>
-    <p>Accede a los recursos y herramientas de la Coordinación de Participación Ciudadana</p>
+    <img src="Logo 30 años.jpg" alt="Logo IEM">
+    <h1>Enlaces de Participación Ciudadana</h1>
   </header>
-
-  <div class="container">
-    <div class="card directorio">
-      <div>🗣️</div>
-      <a href="https://docs.google.com/spreadsheets/d/1Xilnqb4jymMcy9n7cQfWbOgGbRSI3SWj/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
-        Directorio de Charlas Ciudadanas
-      </a>
-    </div>
-
-    <div class="card calendario">
-      <div>🗓️</div>
-      <a href="https://docs.google.com/document/d/1bnE4nGrIUsuQjra13fSZ24nj_SNWa2tP/edit" target="_blank" rel="noopener noreferrer">
-        Calendario de Charlas Ciudadanas
-      </a>
-    </div>
-
-    <div class="card agenda">
-      <div>📅</div>
-      <a href="https://docs.google.com/spreadsheets/d/1AbKjaLVGfy-0Fl2efEtDdH7-bEkvt43n5s3TVm-ftgY/edit?gid=2061439096" target="_blank" rel="noopener noreferrer">
-        Agenda DEECyPC
-      </a>
-    </div>
-
-    <div class="card drive">
-      <div>📁</div>
-      <a href="https://drive.google.com/drive/folders/1aiMqzN1EV5UAWi9Ss2jxhCnY9tcrWUrI" target="_blank" rel="noopener noreferrer">
-        Drive de la CPC
-      </a>
-    </div>
-
-    <div class="card oficios">
-      <div>📑</div>
-      <a href="https://onedrive.live.com/view.aspx?resid=5A167C72C37BC1DA!103&ithint=file%2cxlsx&authkey=!AO0phwAamE5jYi8" target="_blank" rel="noopener noreferrer">
-        Control de Oficios DEECyPC
-      </a>
-    </div>
-
-    <div class="card bitacora">
-      <div>📝</div>
-      <a href="https://onedrive.live.com/edit?id=E2404BBBD1410DF2!152578&resid=E2404BBBD1410DF2!152578&ithint=file%2Cxlsx&authkey=!ADW1GKsSOfoiEI8&wdo=2&cid=e2404bbbd1410df2" target="_blank" rel="noopener noreferrer">
-        Bitácora 2025
-      </a>
-    </div>
-  </div>
-
-  <footer>Coordinación de Participación Ciudadana</footer>
+  <main>
+    <a href="https://www.iem.org.mx" target="_blank">Sitio Oficial IEM</a>
+    <a href="https://www.facebook.com/IEMich" target="_blank">Facebook IEM</a>
+    <a href="https://twitter.com/IEMich" target="_blank">Twitter IEM</a>
+    <a href="https://www.instagram.com/iemich" target="_blank">Instagram IEM</a>
+  </main>
+  <footer>
+    © 2025 Instituto Electoral de Michoacán
+  </footer>
+</body>
+</html>
 
 </body>
 </html>
