@@ -240,13 +240,14 @@
       transform: translateX(3px);
     }
 
-    /* Colores personalizados para cada tarjeta */
+    /* Colores personalizados */
     .card-seguimiento { --card-color: #3F48CC; }
     .card-calendario { --card-color: #FF7F27; }
     .card-agenda { --card-color: #ED1C24; }
     .card-drive { --card-color: #7F7F7F; }
     .card-oficios { --card-color: #1E9E44; }
     .card-bitacora { --card-color: #6D2F91; }
+    .card-rayate { --card-color: #FF449F; }
 
     /* Footer profesional */
     .footer {
@@ -303,32 +304,7 @@
       opacity: 0.7;
     }
 
-    /* Responsivo */
-    @media (max-width: 768px) {
-      .header-content {
-        padding: 40px 20px;
-      }
-
-      .main-container {
-        padding: 60px 20px;
-      }
-
-      .cards-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .card {
-        padding: 25px 20px;
-      }
-
-      .footer-links {
-        flex-direction: column;
-        gap: 15px;
-      }
-    }
-
-    /* Animaciones de entrada */
+    /* Animaciones */
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -350,6 +326,8 @@
     .card:nth-child(4) { animation-delay: 0.4s; }
     .card:nth-child(5) { animation-delay: 0.5s; }
     .card:nth-child(6) { animation-delay: 0.6s; }
+    .card:nth-child(7) { animation-delay: 0.7s; }
+
   </style>
 </head>
 <body>
@@ -372,8 +350,8 @@
       
       <article class="card card-seguimiento">
         <div class="card-icon">📊</div>
-        <h3 class="card-title">Seguimiento y Control</h3>
-        <p class="card-description">Sistema de seguimiento y control de charlas ciudadanas para monitorear el progreso de las actividades</p>
+        <h3 class="card-title">Directorio de Charlas Ciudadanas</h3>
+        <p class="card-description">Lista completa de charlas ciudadanas programadas</p>
         <a href="https://docs.google.com/spreadsheets/d/1Xilnqb4jymMcy9n7cQfWbOgGbRSI3SWj/edit?usp=drive_link" 
            target="_blank" 
            rel="noopener noreferrer" 
@@ -382,18 +360,8 @@
 
       <article class="card card-calendario">
         <div class="card-icon">📅</div>
-        <h3 class="card-title">Calendario de Charlas</h3>
-        <p class="card-description">Calendario oficial con todas las charlas ciudadanas programadas y fechas importantes</p>
-        <a href="https://docs.google.com/document/d/1bnE4nGrIUsuQjra13fSZ24nj_SNWa2tP/edit" 
-           target="_blank" 
-           rel="noopener noreferrer" 
-           class="card-link">Ver Calendario</a>
-      </article>
-
-      <article class="card card-agenda">
-        <div class="card-icon">🗓️</div>
         <h3 class="card-title">Agenda DEECyPC</h3>
-        <p class="card-description">Agenda completa de la Dirección Ejecutiva de Educación Cívica y Participación Ciudadana</p>
+        <p class="card-description">Agenda oficial de actividades de la Dirección Ejecutiva</p>
         <a href="https://docs.google.com/spreadsheets/d/1m9SYYWFKmIOMYNPLrkVDv59rTBDyCgTx/edit?pli=1&gid=2038687988#gid=2038687988" 
            target="_blank" 
            rel="noopener noreferrer" 
@@ -403,7 +371,7 @@
       <article class="card card-drive">
         <div class="card-icon">☁️</div>
         <h3 class="card-title">Drive CPC</h3>
-        <p class="card-description">Repositorio central de documentos y archivos de la Coordinación de Participación Ciudadana</p>
+        <p class="card-description">Repositorio central de documentos y archivos de la Coordinación</p>
         <a href="https://drive.google.com/drive/folders/1aiMqzN1EV5UAWi9Ss2jxhCnY9tcrWUrI" 
            target="_blank" 
            rel="noopener noreferrer" 
@@ -413,7 +381,7 @@
       <article class="card card-oficios">
         <div class="card-icon">📋</div>
         <h3 class="card-title">Control de Oficios</h3>
-        <p class="card-description">Sistema de control y seguimiento de oficios de la Dirección Ejecutiva</p>
+        <p class="card-description">Sistema de control y seguimiento de oficios</p>
         <a href="https://onedrive.live.com/view.aspx?resid=5A167C72C37BC1DA!103&ithint=file%2cxlsx&authkey=!AO0phwAamE5jYi8" 
            target="_blank" 
            rel="noopener noreferrer" 
@@ -423,11 +391,22 @@
       <article class="card card-bitacora">
         <div class="card-icon">📝</div>
         <h3 class="card-title">Bitácora 2025</h3>
-        <p class="card-description">Bitácora oficial de actividades y registros del año en curso</p>
+        <p class="card-description">Bitácora oficial de actividades 2025</p>
         <a href="https://onedrive.live.com/edit?id=E2404BBBD1410DF2!152578&resid=E2404BBBD1410DF2!152578&ithint=file%2Cxlsx&authkey=!ADW1GKsSOfoiEI8&wdo=2&cid=e2404bbbd1410df2" 
            target="_blank" 
            rel="noopener noreferrer" 
            class="card-link">Acceder Bitácora</a>
+      </article>
+
+      <!-- NUEVA TARJETA RÁYATE CON LA DEMOCRACIA -->
+      <article class="card card-rayate">
+        <div class="card-icon">🎨</div>
+        <h3 class="card-title">Ráyate con la Democracia</h3>
+        <p class="card-description">Registro oficial para la actividad de grafiti y muralismo del IEM</p>
+        <a href="https://docs.google.com/spreadsheets/d/1bHDwkccVBgVww7J95Mi0T-iiUM3hKgBdH1GnNHAc4cc/edit?gid=0#gid=0" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="card-link">Ir al Registro</a>
       </article>
 
     </div>
